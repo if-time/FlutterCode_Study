@@ -22,7 +22,6 @@ class _BottomNavgationWidgetState extends State<BottomNavgationWidget> {
               Icons.home,
               color: _BottomNavgationColor,
             ),
-            
           )
         ],
       ),
