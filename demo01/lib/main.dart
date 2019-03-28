@@ -1,30 +1,16 @@
 import 'package:flutter/material.dart';
+import 'bottom_navigation_widget.dart';
 
-class BottomNavgationWidget extends StatefulWidget {
-  final Widget child;
+void main()=>runApp(new MyApp());
 
-  BottomNavgationWidget({Key key, this.child}) : super(key: key);
-
-  _BottomNavgationWidgetState createState() => _BottomNavgationWidgetState();
-}
-
-class _BottomNavgationWidgetState extends State<BottomNavgationWidget> {
-
-  final _BottomNavgationColor =Colors.blue;
-
+class MyApp extends StatelessWidget {
+ 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      bottomNavigationBar: BottomNavigationBar(
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.home,
-              color: _BottomNavgationColor,
-            ),
-          )
-        ],
-      ),
+    return MaterialApp(
+      title: 'Flutter bottomNavi',
+      theme: ThemeData.light(),
+      home: BottomNavgationWidget(),
     );
   }
 }
